@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #e0e0e0;
+}
+.logo {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 270px;
+  display: flex;
+  transition: margin-left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.navbar a {
+  text-align: center;
+  display: inline;
+  color: #57677a;
+  padding-left: 40px;
+  font-family: Poppins;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  transition: color 0.5s ease;
+}
+.navbar a:hover {
+  color: #000000;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px 10%;
+}
+header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10010;
+  background-color: #e0e0e0; /* Corresponding color */
+  height: 60px; /* Reduced height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0; /* Reduced padding */
+}
+header.sticky .navbar ul {
+  margin-right: 0;
+}
+header.sticky .logo {
+  width: 70px; /* Reduced logo size */
+  height: 60px; /* Reduced logo height */
+  margin-left: 100px;
+}
+
+header.sticky .navbar a {
+  padding-left: 20px; /* Adjust padding when sticky */
+  font-size: 0.9em; /* Smaller font size for sticky header */
+}
+
+header.sticky .navbar ul {
+  margin-left: 900px;/* Align to the right when sticky */
+}
+.main-b {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.circle-food {
+  position: absolute;
+  right: 275px;
+  top: 137px;
+  z-index: 2;
+}
+
+.back-col {
+  position: absolute;
+  right: 250px;
+  top: 110px;
+  z-index: 1;
+}
+.hero-text {
+  width: 700px;
+  padding: 70px;
+  text-align: center;
+}
+h1 {
+  font-family: Modak;
+  color: #2c3e50;
+  font-weight: 500;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below its original position */
+  animation: fadeSlideIn 1.5s ease-out forwards; /* Call the animation */
+}
+p {
+  font-family: Poppins;
+  margin-top: 0;
+  color: #99755c;
+  font-weight: 600;
+  font-size: 1rem;
+  transform: translateY(20px); /* Start slightly below its original position */
+  animation: fadeSlideIn 1.5s ease-in forwards; /* Call the animation */
+}
+
+.browse-recipes-btn {
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5a6b81;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeSlideIn 2s ease forwards;
+}
+
+.browse-recipes-btn:hover {
+  background-color: #4b5c70;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.browse-recipes-btn i {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+
+.recipe-section {
+  margin-top: 410px;
+}
+.recipe-text {
+  padding: 50px 20%;
+  /* Space above the section */
+  text-align: center;
+}
+
+h2 {
+  color: #2c3e50;
+  font-family: Modak;
+  font-size: 3rem;
+  font-weight: 400;
+}
+.recipe-section {
+  padding-bottom: 200px;
+}
+.recipe-text p{
+  color: #BFA7EB;
+}
+.recipe-section h3 {
+  color:#000000;
+  font-family: Luckiest Guy;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.desc-title{
+  font-family: Poppins;
+  margin-left: 12px;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.card p{
+  color: #000000;
+  font-weight: 300;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+.carousel-container {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  overflow: hidden; /* Ensures no items go out of bounds */
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 60%; /* Adjusted width for smaller cards */
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s;
+
+}
+
+.carousel-item.active {
+  flex: 0 0 60%;
+  opacity: 1;
+  transform: scale(1); /* Larger active item */
+}
+
+.card {
+  background-color: #dacfc1;
+  border-radius: 20px;
+  overflow: hidden;
+  height: auto;
+  
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Adjusted height for smaller cards */
+  object-fit: cover;
+}
+
+.card-details {
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.category {
+  display: inline-block;
+  background-color: #785589;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.likes-time {
+  display: flex;
+  gap: 20px; /* Adjust the spacing as needed */
+}
+.time,
+.likes {
+  display: inline-block;
+  color: #57677a;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Space between icon and text */
+}
+/* Arrow button styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px; /* Adjusted size for smaller arrows */
+  height: 30px; /* Adjusted size for smaller arrows */
+  font-size: 16px; /* Adjusted font size for smaller arrows */
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.left-arrow {
+  left: 100px;
+}
+
+.right-arrow {
+  right: 100px;
+}
+
+.stat-section{
+  display: flex;
+  padding: 100px;
+  margin-bottom: 100px;
+}
+.stat-data{
+  width: 60%;
+  position: relative;
+}
+.stat-text{
+    padding: 10px;
+    text-align: center;
+}
+.stat-text p{
+  font-size: 1.3rem;
+}
+.stat-desc{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1.5rem;
+  font-family: Poppins;
+  color: #BFA7EB;
+  gap:10px;
+
+}
+.mid{
+  position: absolute;
+  right: 0;
+}
+.bot{
+  position: absolute;
+  bottom: 0;
+}
+.data-holder{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.features-section{
+  padding: 100px;
+  margin-bottom: 200px;
+}
+.f-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+}
+.features{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.features span{
+  font-family: Poppins;
+  font-size: 1.2rem;
+  margin: 5px;
+}
+.features p{
+  font-family: Poppins;
+  padding: 15px 85px;
+}
+
+.last-cta{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.cta-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  padding: 150px;
+}
+.last-cta-btn{
+  margin-top: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5a6b81;
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 12px 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.last-cta-btn:hover {
+background-color: #4b5c70;
+box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.circle-food2{
+  position: absolute;
+  right: 100px;
+  bottom: 113px;
+  z-index: 2;
+}
+
+.back-col2{
+  position: absolute;
+  right: 300px;
+  z-index: 1;
+}
+
+
+footer{
+  background-color:#633D75;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  padding-bottom: 0;
+}
+.foot-texts{
+  display: flex;
+  margin-bottom: 100px;
+  color: white;
+  gap: 80px;
+}
+.foot-texts > p{
+  color: white;
+  font-size: 0.8em;
+  font-weight: normal;
+  margin: 10px;
+  width: 400px;
+}
+.subscribe-sec span{
+    display: block;
+}
+.subscribe-sec input{
+  margin-top: 15px;
+  padding: 10px;
+  width: 60%;
+}
+.subscribe-btn{
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding:10px 13px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.subscribe-btn:hover {
+  background-color: #e4e3e3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+.contact-sec{
+  display: flex;
+  flex-direction: column;
+ line-height: 30px;
+ margin-left: 30px;
+}
+
+
+
+
+
+
+/* Initial state for fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state when element is in view */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
