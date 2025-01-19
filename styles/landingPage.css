@@ -3,6 +3,7 @@
 }
 body {
   background-color: #e0e0e0;
+  background-image: url("../imgs/restaurant_icons.png");
 }
 .logo {
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -21,6 +22,7 @@ body {
   display: flex;
   transition: margin-left 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .navbar a {
   text-align: center;
   display: inline;
@@ -35,6 +37,26 @@ body {
 .navbar a:hover {
   color: #000000;
 }
+.navbar .signup-btn{
+  opacity: 0;
+  background-color: #c2d2ff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.navbar .login-btn{
+  opacity: 0;
+  background-color: #99755c;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.navbar .signup-btn:hover{
+  background-color: #a6c2ff;
+}
+.navbar .login-btn:hover{
+  background-color: #7a5c3d;
+}
 header {
   display: flex;
   align-items: center;
@@ -45,13 +67,10 @@ header.sticky {
   top: 0;
   width: 100%;
   z-index: 10010;
-  background-color: #e0e0e0; /* Corresponding color */
+  background-color: #fafaec; /* Corresponding color */
   height: 60px; /* Reduced height */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 10px 0; /* Reduced padding */
-}
-header.sticky .navbar ul {
-  margin-right: 0;
 }
 header.sticky .logo {
   width: 70px; /* Reduced logo size */
@@ -60,12 +79,20 @@ header.sticky .logo {
 }
 
 header.sticky .navbar a {
-  padding-left: 20px; /* Adjust padding when sticky */
+  padding-left: 0;
   font-size: 0.9em; /* Smaller font size for sticky header */
+  margin-right: 30px;
 }
-
+header.sticky .navbar .signup-btn{
+  opacity: 100;
+  padding: 10px 20px;
+}
+header.sticky .navbar .login-btn{
+  opacity: 100;
+  padding: 10px 30px;
+}
 header.sticky .navbar ul {
-  margin-left: 900px;/* Align to the right when sticky */
+  margin-left: 700px;/* Align to the right when sticky */
 }
 .main-b {
   position: absolute;
@@ -158,7 +185,7 @@ h2 {
   padding-bottom: 200px;
 }
 .recipe-text p{
-  color: #BFA7EB;
+  color: #99755c;
 }
 .recipe-section h3 {
   color:#000000;
@@ -188,6 +215,9 @@ h2 {
   width: 60%;
   margin: auto;
   overflow: hidden; /* Ensures no items go out of bounds */
+}
+.recipe-section a{
+  text-decoration: none;
 }
 
 .carousel {
@@ -309,7 +339,7 @@ h2 {
   text-align: left;
   font-size: 1.5rem;
   font-family: Poppins;
-  color: #BFA7EB;
+  color: #99755c;
   gap:10px;
 
 }
