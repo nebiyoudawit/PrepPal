@@ -18,7 +18,7 @@ body {
 }
 
 .logo:hover {
-    transform: scale(1.1);
+    transform: scale(1);
     opacity: 0.8;
 }
 
@@ -54,7 +54,7 @@ body {
     height: 50px;
     margin-left: 10px;
     border-radius: 50%;
-    background-image: url('/imgs/photo_2024-10-17_14-40-54.jpg');
+    background-image: url('./imgs/photo_2024-10-17_14-40-54.jpg');
     background-size: cover;
     background-position: center;
     cursor: pointer;

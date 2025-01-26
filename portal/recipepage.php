@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrepPal Recipe</title>
     <link rel="icons" href="/imgs/Copy_of_PrepPal__2_-removebg-preview.png" />
-    <link rel="stylesheet" href="/styles/recipePage.css" />
+    <link rel="stylesheet" href="../styles/recipePage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,10 +33,10 @@
     <header class="navbar">
       <div class="logo">
         <img
-          src="/imgs/Copy_of_PrepPal-removebg-preview.png"
+          src="../imgs/Copy_of_PrepPal-removebg-preview.png"
           alt="logo"
-          width="90"
-          height="80"
+          width="80"
+          height="70"
           class="logo"
         />
       </div>
@@ -51,7 +51,7 @@
     <main class="recipe-detail">
       <div class="recipe-card">
         <img
-          src="/imgs/Best-Ethiopian-Food.jpg"
+          src="../imgs/Best-Ethiopian-Food.jpg"
           alt="Recipeimage"
           class="recipe-image"
         />
@@ -194,6 +194,6 @@
       </div>
     </main>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
-    <script src="/scripts/recipepage.js"></script>
+    <script src="../scripts/recipepage.js"></script>
   </body>
 </html>

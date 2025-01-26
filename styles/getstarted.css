@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Poppins, sans-serif;
+    background-image: url(../imgs/restaurant_icons.png);
+    color: #333;
+}
+h1{
+    font-family: Galindo,Poppins, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #333;
+    margin-top: 100px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.highlight{
+    color: #FF7F50;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    display: inline-block;
+    background-color: #ffffff;
+    width: 55%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.question2,.question3{
+    display: none;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/* Question1 styles*/
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.option:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* Question2 styles*/
+.options2{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+.option2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    margin: 40px 40px;
+}
+.option2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* Question3 styles*/
+.options3{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px;
+}
+.option3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.option3:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* Progress bar styles */
+.progress-bar {
+    margin: 30px 200px;
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress {
+    width: 33%;
+    height: 100%;
+    background-color: #f26b3a;
+    border-radius: 5px;
+  }
+  
+  .step {
+    font-size: 0.9rem;
+    color: #666;
+  }

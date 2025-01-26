@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PrepPal</title>
-    <link rel="icons" href="/imgs/Copy_of_PrepPal__2_-removebg-preview.png" />
-    <link rel="stylesheet" href="/styles/landingPage.css" />
+    <link rel="icons" href="./imgs/Copy_of_PrepPal__2_-removebg-preview.png" />
+    <link rel="stylesheet" href="./styles/landingPage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -32,7 +32,7 @@
   <body>
     <!-- Header Section -->
     <header>
-      <a href="index.html"
+      <a href="index.php"
          ><img
           src="imgs/Copy_of_PrepPal-removebg-preview.png"
           alt="logo"
@@ -46,8 +46,8 @@
           <li><a href="#recipes">RECIPES</a></li>
           <li><a href="#features">FEATURES</a></li>
           <li><a href="#contact">CONTACT US</a></li>
-          <li><a href="loginpage.html" class="login-btn">LOGIN</a></li>
-          <li><a href="signuppage.html" class="signup-btn">SIGN UP</a></li>
+          <li><a href="loginpage.php" class="login-btn">LOGIN</a></li>
+          <li><a href="signuppage.php" class="signup-btn">SIGN UP</a></li>
         </ul>
       </nav>
     </header>
@@ -56,21 +56,21 @@
     <section class="hero-section">
       <div class="hero-img" id="home">
         <img
-          src="/imgs/Ellipse 1 (1).png"
+          src="./imgs/Ellipse 1 (1).png"
           alt="food"
           class="circle-food"
           width="425"
           height="425"
         />
         <img
-          src="/imgs/Ellipse 19.png"
+          src="./imgs/Ellipse 19.png"
           alt="background circle"
           class="back-col"
           width="255"
           height="475"
         />
         <img
-          src="/imgs/Rectangle 12.png"
+          src="./imgs/Rectangle 12.png"
           alt="hero-img"
           class="main-b"
           style="display: block"
@@ -82,7 +82,7 @@
           Find recipes you’ll love, organize your favorites,<br />
           and make every meal unforgettable.
         </p>
-        <a href="loginpage.html" class="browse-recipes-btn">
+        <a href="loginpage.php" class="browse-recipes-btn">
           Browse recipes <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
@@ -100,7 +100,7 @@
       <div class="carousel-container fade-in">
         <div class="carousel">
           <div class="carousel-item" id="item1">
-            <a href="loginpage.html">
+            <a href="loginpage.php">
             <div class="card">
               <img src="imgs/Delectable Flan Dessert.jpeg" alt="Classic Flan" />
               <div class="card-details">
@@ -124,7 +124,7 @@
           </div>
         </a>
           <div class="carousel-item" id="item2">
-            <a href="loginpage.html">
+            <a href="loginpage.php">
             <div class="card">
               <img src="imgs/Best-Ethiopian-Food.jpg" alt="Bey'aynet" />
               <div class="card-details">
@@ -148,7 +148,7 @@
             </a>
           </div>
           <div class="carousel-item" id="item3">
-            <a href="loginpage.html">
+            <a href="loginpage.php">
             <div class="card">
               <img src="imgs/Rustic Bowl of Soup.jpeg" alt="Creamy Vegetable" />
               <div class="card-details">
@@ -291,15 +291,15 @@
         <div class="cta-description">
           <h2 class="fade-in">Your Recipe Adventure Awaits!</h2>
           <p class="fade-in">Sign up to unlock a world of delicious recipes, save your favorites, and share your own culinary creations.</p>
-          <a class="last-cta-btn fade-in" href="signuppage.html">GET STARTED</a>
+          <a class="last-cta-btn fade-in" href="signuppage.php">GET STARTED</a>
         </div>
-        <img src="/imgs/2.png" alt="backgroundimg" class="back-col2">
-        <img src="/imgs/e3.png" alt="" class="circle-food2 fade-in">
+        <img src="./imgs/2.png" alt="backgroundimg" class="back-col2">
+        <img src="./imgs/e3.png" alt="" class="circle-food2 fade-in">
     </section>
     <!--footer-->
     <footer id="contact">
       <img
-          src="imgs/Copy_of_PrepPal__4_-removebg-preview.png"
+          src="./imgs/Copy_of_PrepPal__4_-removebg-preview.png"
           alt="logo"
           width="90"
           height="80"
@@ -321,7 +321,7 @@
       <hr>
       <span style="text-align: center; color: white">©2025 All Rights Reserved</span>
     </footer>
-    <script src="/scripts/landing-page.js"></script>
+    <script src="./scripts/landing-page.js"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
   </body>
 </html>

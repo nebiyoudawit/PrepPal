@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PrepPal Login</title>
-    <link rel="icons" href="/imgs/Copy_of_PrepPal__2_-removebg-preview.png" />
-    <link rel="stylesheet" href="/styles/loginpage.css" />
+    <title>PrepPal SignUp</title>
+    <link rel="icons" href="./imgs/Copy_of_PrepPal__2_-removebg-preview.png" />
+    <link rel="stylesheet" href="./styles/signupPage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,29 +26,51 @@
     />
   </head>
   <body>
-    <a href="index.html"
+    <a href="index.php"
       ><img
-        src="/imgs/Copy_of_PrepPal-removebg-preview.png"
+        src="./imgs/Copy_of_PrepPal-removebg-preview.png"
         width="90"
         height="80"
         alt="PrepPal Logo"
         class="logo"
       />
     </a>
+    <div class="image-section"></div>
     <div class="container">
       <div class="form-section">
-        <h1>WELCOME BACK</h1>
-        <p>
-          Log in to access your recipe collection and<br />discover new
-          favorites.
-        </p>
+        <h1>Create Account</h1>
         <form>
+          <div class="form-group profile">
+            <div class="icon-container" id="icon-container">
+              <lord-icon
+                src="https://cdn.lordicon.com/hrjifpbq.json"
+                trigger="in"
+                delay="500"
+                state="in-account"
+                colors="primary:#794628"
+                style="width: 100px; height: 100px"
+              >
+              </lord-icon>
+            </div>
+            <input type="file" id="profile-input" accept="image/*" />
+            <span class="profile-info">Upload Profile Picture</span>
+            <div class="image-preview" id="image-preview"></div>
+          </div>
           <div class="form-group">
             <label for="username">UserName</label>
             <input
               type="text"
               id="username"
               placeholder="Enter Your User Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Enter Your Email</label>
+            <input
+              type="email"
+              id="password"
+              placeholder="Enter Your Email"
               required
             />
           </div>
@@ -62,14 +84,15 @@
             />
           </div>
           <div class="button-wrapper">
-            <button class="sign-in-btn" type="submit">Sign in</button>
+            <button class="sign-up-btn" type="submit">Create Account</button>
           </div>
         </form>
-        <div class="sign-up-link">
-          Don't have an account? <a href="signuppage.html">Sign up for free!</a>
+        <div class="log-in-link">
+            Already have an account?<a href="loginpage.html">Log in</a>
         </div>
       </div>
     </div>
-    <div class="image-section"></div>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="/scripts/signup-page.js"></script>
   </body>
 </html>
