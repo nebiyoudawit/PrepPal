@@ -1,0 +1,15 @@
+h2{
+    margin-left: 17%;
+    margin-bottom: 10px; 
+}
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 82%;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 17%;
+    margin-right: 15%;
+    padding: 20px;
+    overflow-y: auto;
+}

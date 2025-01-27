@@ -10,6 +10,16 @@ html,body {
     overflow: hidden;
     background-image: url(../imgs/restaurant_icons.png);
   }
+  .logo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
   
 /* Sidebar Styles */
 .sidebar {
@@ -82,13 +92,6 @@ html,body {
     margin-right: -20px;
     margin-bottom: 20px;
   }
-  /* Main Content */
-  .main-content {
-    margin-left: 15%;
-    padding: 20px;
-    overflow-y: auto; /* Enable vertical scrolling */
-  }
-  
   header {
     display: flex;
     align-items: center;
@@ -113,20 +116,10 @@ html,body {
     border-radius: 50%;
     margin-right: 10px;
   }
-  
+  /*Recipe Cards*/
   .recipes {
     margin-bottom: 40px;
-  }
-  
-  .section-header {
-    margin-bottom: 15px;
-  }
-  
-  .section-header h2 {
-    font-size: 20px;
-    color: #555;
-  }
-  
+  }  
   .recipe-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -192,8 +185,10 @@ html,body {
     color: #888;
     margin-bottom: 10px;
     margin-top: 5px;
-    margin-right: 5px;
-    gap: 5px;
+    gap: 10px;
+  }
+  .likes-time span {
+    margin-left: 5px;
   }
   .recipe-card-footer {
     display: flex;
@@ -205,3 +200,25 @@ html,body {
     font-size: 14px;
     color: #4a6fa5;
   }
+  /* search bar */
+  .search-container {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    margin-left: 15%;
+  }
+.search-bar{
+    width: 88%;
+    margin: 10px 100px;
+    font-weight: 400;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.search-container .fa-search {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    color: gray;
+}

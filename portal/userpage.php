@@ -39,18 +39,30 @@
 ?>
 
 <aside class="sidebar">
-  <div class="logo">
+  <a href="home.php"><div class="logo">
     <img src="../imgs/Copy_of_PrepPal-removebg-preview.png" alt="PrepPal Logo">
   </div>
+</a>
   <nav>
-    <ul>
-      <li class="<?= $current_page == 'home.php' ? 'active' : '' ?>"><a href="home.php" >Home</a></li>
-      <li class="<?= $current_page == 'recipes.php' ? 'active' : '' ?>"><a href="recipes.php">Recipes</a></li>
-      <li class="<?= $current_page == 'myrecipes.php' ? 'active' : '' ?>"><a href="myrecipes.php">My Recipes</a></li>
-      <li class="<?= $current_page == 'saved.php' ? 'active' : '' ?>"><a href="saved.php">Saved</a></li>
-      <li class="<?= $current_page == 'logout.php' ? 'active' : '' ?>"><a href="logout.php">Logout</a></li>
-    </ul>
-  </nav>
+  <ul>
+    <li class="<?= $current_page == 'home.php' ? 'active' : '' ?>">
+      <a href="home.php"><i class="fa fa-home"></i> Home</a>
+    </li>
+    <li class="<?= $current_page == 'recipes.php' ? 'active' : '' ?>">
+      <a href="recipes.php"><i class="fa fa-book"></i> Recipes</a>
+    </li>
+    <li class="<?= $current_page == 'myrecipes.php' ? 'active' : '' ?>">
+      <a href="myrecipes.php"><i class="fa fa-user"></i> My Recipes</a>
+    </li>
+    <li class="<?= $current_page == 'saved.php' ? 'active' : '' ?>">
+      <a href="saved.php"><i class="fa fa-bookmark"></i> Saved</a>
+    </li>
+    <li class="<?= $current_page == 'logout.php' ? 'active' : '' ?>">
+      <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
+    </li>
+  </ul>
+</nav>
+
 </aside> 
     <header>
         <h1>Hello, Nebiyou_D</h1>
