@@ -28,12 +28,11 @@ Whether you're a passionate home cook or a curious food explorer, PrepPal offers
 The hero section greets users with a vibrant layout, catchy tagline, and a compelling CTA to browse or sign up.
 
 ![Landing Page Screenshot](screenshots/Landingpage1.png)
-🖼️ _Screenshot: `screenshots/Landingpage2.png`_
-🖼️ _Screenshot: `screenshots/LandingPage3.png`_
-🖼️ _Screenshot: `screenshots/LandingPage4.png`_
-🖼️ _Screenshot: `screenshots/LandingPage5.png`_
-🖼️ _Screenshot: `screenshots/LandingPage6.png`_
-
+![Landing Page Screenshot](screenshots/Landingpage2.png)
+![Landing Page Screenshot](screenshots/Landingpage3.png)
+![Landing Page Screenshot](screenshots/Landingpage4.png)
+![Landing Page Screenshot](screenshots/Landingpage5.png)
+![Landing Page Screenshot](screenshots/Landingpage6.png)
 
 - Animated visuals and floating elements
 - Smooth navigation to key sections
@@ -46,8 +45,8 @@ The hero section greets users with a vibrant layout, catchy tagline, and a compe
 
 Secure login and signup system for user access and personalized features.
 
-🖼️ _Signup: `screenshots/signup.jpeg`_  
-🖼️ _Login: `screenshots/login.jpeg`_
+![Login Page Screenshot](screenshots/login.jpeg) 
+![signin Page Screenshot](screenshots/signup.jpeg)
 
 - Backend validation with PHP & MySQL
 - Required for saving, liking, and adding recipes
@@ -58,7 +57,7 @@ Secure login and signup system for user access and personalized features.
 
 After logging in, users land on a recipe discovery hub showing community favorites.
 
-🖼️ _Screenshot: `screenshots/Home.jpeg`_
+![Home Page Screenshot](screenshots/Home.jpeg)
 
 - Featured and liked recipes displayed
 - Beautiful card layout with preview info
@@ -70,7 +69,7 @@ After logging in, users land on a recipe discovery hub showing community favorit
 
 Dive into any recipe to see full instructions, ingredients, and user interactions.
 
-🖼️ _Screenshot Placeholder: `screenshots/RecipePage.jpeg`_
+![RecipePage Screenshot](screenshots/RecipePage.jpeg)
 
 - Full recipe details (title, category, steps, cook time, image)
 - Users can **like**, **comment**, and **save** recipes
@@ -83,7 +82,7 @@ Dive into any recipe to see full instructions, ingredients, and user interaction
 
 Browse and search through the entire recipe collection with ease.
 
-🖼️ _Screenshot Placeholder: `screenshots/BrowseRecipe.jpeg`_
+![Page Screenshot](screenshots/BrowseRecipe.jpeg)
 
 - **Search bar** to find recipes by name
 - **Category filters** (Breakfast, Lunch, Dinner, etc.)
@@ -96,7 +95,7 @@ Browse and search through the entire recipe collection with ease.
 
 Personal dashboard to manage your own contributions.
 
-🖼️ _Screenshot Placeholder: `screenshots/Myrecipes.jpeg`_
+![Page Screenshot](screenshots/Myrecipes.jpeg)
 
 - View all recipes submitted by you
 - **Edit** or **delete** your existing recipes
@@ -109,8 +108,8 @@ Personal dashboard to manage your own contributions.
 
 Let users become creators! Logged-in users can easily submit or update recipes.
 
-🖼️ _Screenshot: `screenshots/EditRecipe.jpeg`_
-🖼️ _Screenshot: `screenshots/AddRecipe.jpeg`_
+![Page Screenshot](screenshots/Addrecipe.jpeg)
+![Page Screenshot](screenshots/EditRecipe.jpeg)
 
 - Upload image, add recipe title, description, ingredients, steps, etc.
 - Choose category and input prep/cook time
@@ -122,7 +121,7 @@ Let users become creators! Logged-in users can easily submit or update recipes.
 
 Users can build a collection of their favorite recipes for quick future access.
 
-🖼️ _Screenshot: `screenshots/Saved.jpeg`_
+![Page Screenshot](screenshots/Saved.jpeg)
 
 - One-click “Save” functionality on recipe cards
 - Personalized saved recipes section
@@ -134,7 +133,7 @@ Users can build a collection of their favorite recipes for quick future access.
 
 Dedicated panel for admin to manage the ecosystem.
 
-🖼️ _Screenshot: `screenshots/AdminPage.jpeg`_
+![signin Page Screenshot](screenshots/AdminPage.jpeg)
 
 Admins can:
 - View and moderate all submitted recipes
