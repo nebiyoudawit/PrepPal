@@ -436,7 +436,7 @@ box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
 
-
+/*Footer Styles*/
 footer{
   background-color:#633D75;
   display: flex;
@@ -450,46 +450,19 @@ footer{
   color: white;
   gap: 80px;
 }
-.foot-texts > p{
+.foot-texts p{
   color: white;
   font-size: 0.8em;
   font-weight: normal;
   margin: 10px;
   width: 400px;
 }
-.subscribe-sec span{
-    display: block;
-}
-.subscribe-sec input{
-  margin-top: 15px;
-  padding: 10px;
-  width: 60%;
-}
-.subscribe-btn{
-  background-color: white;
-  color: black;
-  border-radius: 50px;
-  padding:10px 13px;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-.subscribe-btn:hover {
-  background-color: #e4e3e3;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
 .contact-sec{
   display: flex;
   flex-direction: column;
  line-height: 30px;
- margin-left: 30px;
+ margin-left: auto;
 }
-
-
-
-
-
-
 /* Initial state for fade-in */
 .fade-in {
   opacity: 0;

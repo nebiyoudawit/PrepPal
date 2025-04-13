@@ -1,0 +1,21 @@
+.main-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  margin-left: 15%;
+  margin-top: 10px;
+  gap: 20px; /* Space between recipe cards */
+  justify-content: center;
+  max-height: 500px; /* Adjust this height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 20px;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #ccc transparent; /* Custom scrollbar color */
+  position: relative; /* Ensures the content doesn't affect the body */
+  top: 0;
+  bottom: 0;
+}
+  .title {
+    margin-left: 17%;
+    font-size: 20px;
+    color: #555;
+  }

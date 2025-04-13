@@ -1,0 +1,259 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url("../imgs/restaurant_icons.png");
+}
+.logo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1);
+    opacity: 0.8;
+}
+
+.navbar {
+    position: sticky; /* Make the navbar stick to the top during scrolling */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other content */
+    display: flex;
+    align-items: center;
+    background-color: #fafaec;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for better visibility */
+}
+
+.navbar nav {
+    margin-left: auto;
+}
+
+.navbar nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar nav a:hover {
+    color: #8d3503;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-image: url('./imgs/photo_2024-10-17_14-40-54.jpg');
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+  
+
+/* Recipe Detail */
+.recipe-detail {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.recipe-card {
+    flex: 2;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    margin-left: 20px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 18px;
+    height: 450px;
+    object-fit: cover;
+}
+ .recipe-info{
+    padding: 20px 30px;
+ }
+ .recipe-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+ }
+ .stat-container ,.like-form{
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    color: #57677a;
+    font-weight: bold;
+    align-items: center;
+ }
+ .save-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #57677a;
+ }
+ .liked-state,.saved-state{
+    display: none;
+ }
+.recipe-card h1 {
+    font-size: 1.8rem;
+    color: #8d3503;
+}
+
+.tags{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    font-size: 1.2rem;
+}
+.difficulty{
+    display: flex;
+    align-items: center;
+}
+.type{
+    background-color: #BE270C;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.description {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.ingredients, .instructions {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.instructions {
+    list-style: decimal;
+}
+
+.ingredients {
+    list-style: circle;
+}
+
+h2 {
+    color: #8d3503;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Reviews Section */
+.reviews-section {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.reviews-section h2 {
+    margin-bottom: 15px;
+}
+
+.add-review textarea {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.add-review button {
+    display: block;
+    width: 100%;
+    background-color: #8d3503;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-review button:hover {
+    background-color: #712900;
+}
+.profile-pic{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url('/imgs/photo_2024-10-17_14-40-54.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.review {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.review p {
+    margin-bottom: 5px;
+}
+
+.review .date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.review-user-info {
+    display: flex;
+    align-items: center;
+}
+
+.review-user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.delete-review-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-review-btn:hover {
+    background-color: darkred;
+}

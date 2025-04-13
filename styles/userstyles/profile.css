@@ -1,0 +1,102 @@
+.profile-container{
+display: flex;
+flex-direction: column;
+margin-left: 15%;
+margin-top: 10px;
+gap: 20px; /* Space between recipe cards */
+overflow-y: auto; /* Enables vertical scrolling */
+padding: 20px;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Success and Error Messages */
+.error-message,
+.success-message {
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.error-message {
+    background-color: #f44336;
+}
+
+.success-message {
+    background-color: #4CAF50;
+}
+
+/* Profile Picture */
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.profile-picture input {
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+
+
+.save-btn,
+.cancel-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 120px;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+.cancel-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #e53935;
+}

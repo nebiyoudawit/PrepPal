@@ -1,0 +1,188 @@
+.add-recipe {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    margin: 10px 30px;
+}
+
+.add-recipe:hover {
+    background: #218838;
+}
+a{
+    text-decoration: none;
+}
+.recipes {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    margin-left: 17%;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    gap: 20px; /* Space between recipe cards */
+    max-height: 400px; /* Adjust this height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 20px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #ccc transparent; /* Custom scrollbar color */
+    position: relative; /* Ensures the content doesn't affect the body */
+    top: 0;
+    bottom: 0;
+}
+.edit-recipe{
+    color:#0056b3;
+    cursor: pointer;
+}
+.edit-recipe:hover{
+    color: #007bff;
+}
+.delete-recipe{
+    color: #c82333;
+    cursor: pointer;
+}
+.delete-recipe:hover{
+    color:#dc3545;
+}
+/* General styling for the form container */
+#add-recipe-container,#edit-recipe-container {
+    position: relative;
+    width: 83%;
+    margin-left: 17%;
+    border-radius: 8px;
+    max-height: 500px; /* Set a max-height to allow scrolling */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding-bottom: 80px; /* Ensure space for buttons */
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+/* Input fields, select and textarea styling */
+input, textarea, select {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: auto;
+}
+.name{
+    margin-top: -35px;
+}
+textarea {
+    height: 70px;
+    margin-top: -10px;
+}
+
+/* Time Input styling */
+.time-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-input input {
+    width: 80px;
+    padding: 5px;
+    text-align: right;
+}
+
+.time-input span {
+    font-weight: bold;
+}
+
+/* File input container positioning */
+.file-container {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Submit and cancel buttons */
+button[type="submit"],
+#cancel-add-recipe, #cancel-edit-recipe {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 65%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#cancel-add-recipe, #cancel-edit-recipe{
+    background-color: #dc3545;
+    position: absolute;
+    margin-top: -70px;
+    margin-left: 77%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancel-add-recipe:hover {
+    background-color: #c82333;
+}
+
+/* Positioning the buttons at the bottom */
+.button-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Styling for ingredients and instructions section */
+#ingredients-container, #instructions-container {
+    margin-top: 10px;
+}
+
+#add-ingredient, #add-instruction,#edit-ingredient, #edit-instruction {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#add-ingredient:hover, #add-instruction:hover, #edit-ingredient:hover, #edit-instruction:hover {
+    background-color: #0056b3;
+}
+.remove-ingredient,
+.remove-instruction {
+    cursor: pointer;
+    color: red;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.remove-ingredient:hover,
+.remove-instruction:hover {
+    color: darkred;
+}

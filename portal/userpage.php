@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PrepPal</title>
-  <link rel="stylesheet" href="../styles/userpage.css">
+  <link rel="stylesheet" href="/PrepPal/styles/userstyles/userpage.css">
   <link rel="icons" href="./imgs/Copy_of_PrepPal__2_-removebg-preview.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,13 +35,20 @@
 <body>
   <div class="container">
   <?php
+  session_start();
+  if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+  }
+
+  include "db.php";
   // Get the current file name
   $current_page = basename($_SERVER['PHP_SELF']);
 ?>
 
 <aside class="sidebar">
   <a href="home.php"><div class="logo">
-    <img src="../imgs/Copy_of_PrepPal-removebg-preview.png" alt="PrepPal Logo">
+    <img src="/PrepPal/uploads/Copy_of_PrepPal-removebg-preview.png" alt="PrepPal Logo">
   </div>
 </a>
   <nav>
@@ -57,6 +65,9 @@
     <li class="<?= $current_page == 'saved.php' ? 'active' : '' ?>">
       <a href="saved.php"><i class="fa fa-bookmark"></i> Saved</a>
     </li>
+    <li class="<?= $current_page == 'profile.php' ? 'active' : '' ?>">
+      <a href="profile.php"><i class="fas fa-user-circle"></i> Profile</a>
+    </li>
     <li class="<?= $current_page == 'logout.php' ? 'active' : '' ?>">
       <a href="logout.php"><i class="fa fa-sign-out-alt"></i> Logout</a>
     </li>
@@ -65,12 +76,13 @@
 
 </aside> 
     <header>
-        <h1>Hello, Nebiyou_D</h1>
+        <h1>Hello, <?php echo $_SESSION['name'];?></h1>
         <div class="profile">
-          <img src="profile.jpg" alt="Profile Picture">
-          <span>Nebiyou_D</span>
-        </div>
+        <img src="/PrepPal/uploads/user-pictures/<?php echo $_SESSION['profile_picture']; ?>" alt="Profile Picture">
+        <span><?php echo $_SESSION['name']; ?></span>
+</div>
       </header>
     <hr>
+    <script src="/PrepPal/scripts/userscripts/userpage.js"></script>
   </body>
 </html>
