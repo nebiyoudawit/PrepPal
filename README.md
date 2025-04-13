@@ -40,8 +40,8 @@ The hero section greets users with a vibrant layout, catchy tagline, and a compe
 
 Secure login and signup system for user access and personalized features.
 
-🖼️ _Signup: `screenshots/Screenshot_13-4-2025_105338_localhost.jpeg`_  
-🖼️ _Login: `screenshots/Screenshot_13-4-2025_105315_localhost.jpeg`_
+🖼️ _Signup: `./screenshots/Screenshot_13-4-2025_105338_localhost.jpeg`_  
+🖼️ _Login: `./screenshots/Screenshot_13-4-2025_105315_localhost.jpeg`_
 
 - Backend validation with PHP & MySQL
 - Required for saving, liking, and adding recipes
