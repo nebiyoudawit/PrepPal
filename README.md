@@ -27,8 +27,8 @@ Whether you're a passionate home cook or a curious food explorer, PrepPal offers
 
 The hero section greets users with a vibrant layout, catchy tagline, and a compelling CTA to browse or sign up.
 
-🖼️ _Screenshot: `screenshots/LandingPage1.png`_
-🖼️ _Screenshot: `screenshots/LandingPage2.png`_
+![Landing Page Screenshot](screenshots/Landingpage1.png)
+🖼️ _Screenshot: `screenshots/Landingpage2.png`_
 🖼️ _Screenshot: `screenshots/LandingPage3.png`_
 🖼️ _Screenshot: `screenshots/LandingPage4.png`_
 🖼️ _Screenshot: `screenshots/LandingPage5.png`_
