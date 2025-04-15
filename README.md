@@ -155,7 +155,6 @@ PrepPal is a beginner level personal project made to showcase my passion for ful
 ## 📫 Contact
 
 - 📧 Email: nebiyoudawit21@gmail.com
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](www.linkedin.com/in/nebiyou-dawit-900347327)
 
 ---
 
